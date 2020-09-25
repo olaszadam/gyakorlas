@@ -1,0 +1,78 @@
+/* a-ra pakolt pszeudo-elemek: link,visited,hover,active */
+a:link {
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+    text-decoration: line-through;
+    color: dodgerblue;
+}
+
+a:hover {
+    text-decoration: overline;
+    color: mediumseagreen;
+}
+
+a:active {
+    text-decoration: none;
+    color: yellow;
+}
+
+table, th, td {
+    border: 2px solid dodgerblue;
+}
+
+table {
+    /* Határoló vonalak összeroppantása.  */
+    /* border-collapse: collapse; */
+    /* Határoló vonalak eltávolítása, ha nincs border-collapse. */
+    border-spacing: 20px;
+    /* Üres cellaelemek eltüntetése. */
+    empty-cells: hide;
+}
+
+th, td {
+    padding: 20px;
+}
+
+/* Páratlan elemek formázása */
+tr:nth-child(odd) {
+    /* background-color: lightgreen; */
+}
+/* Sorra ráhútom az egeret, 'lebegtetem' felette */
+/* tr:hover {
+    background-color: #000;
+    color: #fff;
+    font-size: 2em;
+} */
+
+caption {
+    margin: 20px 0px;
+    text-decoration: underline dashed red;
+}
+
+ul {
+    /* lista elem megváltaztotása: disc, circle, square, none */
+    /* list-style-type: disc; */
+    list-style-image: url(./favicon.ico);
+}
+
+ul#lila {
+    list-style-image: url(./sqpurple.gif);
+}
+
+a#lila li a:link {
+    text-decoration: none;
+    color: tomato;
+}
+
+a#lila li a:visited {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a#lila li a:hover {
+    text-decoration: none;
+    color: lightcoral;
+}
